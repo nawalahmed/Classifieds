@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import ImageCachingFramework
+import ImageCaching
 
 class DetailListingViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 

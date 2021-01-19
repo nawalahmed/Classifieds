@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import ImageCachingFramework
+import ImageCaching
 
 class ListingViewController: UIViewController {
 

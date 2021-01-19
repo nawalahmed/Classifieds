@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		196932F925B56C1800ABB995 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196932F825B56C1800ABB995 /* AppConstants.swift */; };
-		1969330D25B56D1300ABB995 /* ImageCachingFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1969330525B56D0A00ABB995 /* ImageCachingFramework.framework */; };
-		1969330E25B56D1300ABB995 /* ImageCachingFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1969330525B56D0A00ABB995 /* ImageCachingFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1969334425B5735800ABB995 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1969334225B5735800ABB995 /* SceneDelegate.swift */; };
 		1969335425B575C800ABB995 /* AppUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1969335325B575C800ABB995 /* AppUtilities.swift */; };
+		2088811625B74D3A009DFEA4 /* ImageCaching.h in Headers */ = {isa = PBXBuildFile; fileRef = 2088811425B74D3A009DFEA4 /* ImageCaching.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2088812225B74D5E009DFEA4 /* ImageCaching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2088812125B74D5E009DFEA4 /* ImageCaching.swift */; };
+		2088812925B74DA3009DFEA4 /* ImageCaching.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2088811225B74D3A009DFEA4 /* ImageCaching.framework */; };
+		2088812A25B74DA3009DFEA4 /* ImageCaching.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2088811225B74D3A009DFEA4 /* ImageCaching.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		20AC3DFC25B2F0390082ED80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AC3DFB25B2F0390082ED80 /* AppDelegate.swift */; };
 		20AC3E0225B2F03D0082ED80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20AC3E0125B2F03D0082ED80 /* Assets.xcassets */; };
 		20AC3E0825B2F03D0082ED80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20AC3E0625B2F03D0082ED80 /* LaunchScreen.storyboard */; };
@@ -33,19 +35,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1969330425B56D0A00ABB995 /* PBXContainerItemProxy */ = {
+		2088812B25B74DA3009DFEA4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 196932FF25B56D0A00ABB995 /* ImageCachingFramework.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 20729D1A25B4E1FB0065197E;
-			remoteInfo = ImageCachingFramework;
-		};
-		1969330625B56D0A00ABB995 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 196932FF25B56D0A00ABB995 /* ImageCachingFramework.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 20729D2325B4E1FC0065197E;
-			remoteInfo = ImageCachingFrameworkTests;
+			containerPortal = 20AC3DF025B2F0390082ED80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2088811125B74D3A009DFEA4;
+			remoteInfo = ImageCaching;
 		};
 		20AC3E0F25B2F03D0082ED80 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -64,13 +59,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		1969330F25B56D1300ABB995 /* Embed Frameworks */ = {
+		2088812D25B74DA3009DFEA4 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1969330E25B56D1300ABB995 /* ImageCachingFramework.framework in Embed Frameworks */,
+				2088812A25B74DA3009DFEA4 /* ImageCaching.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,9 +74,12 @@
 
 /* Begin PBXFileReference section */
 		196932F825B56C1800ABB995 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
-		196932FF25B56D0A00ABB995 /* ImageCachingFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ImageCachingFramework.xcodeproj; path = Frameworks/ImageCachingFramework/ImageCachingFramework.xcodeproj; sourceTree = "<group>"; };
 		1969334225B5735800ABB995 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = SOURCE_ROOT; };
 		1969335325B575C800ABB995 /* AppUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUtilities.swift; sourceTree = "<group>"; };
+		2088811225B74D3A009DFEA4 /* ImageCaching.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImageCaching.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2088811425B74D3A009DFEA4 /* ImageCaching.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageCaching.h; sourceTree = "<group>"; };
+		2088811525B74D3A009DFEA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2088812125B74D5E009DFEA4 /* ImageCaching.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCaching.swift; sourceTree = "<group>"; };
 		20AC3DF825B2F0390082ED80 /* Classifieds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Classifieds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20AC3DFB25B2F0390082ED80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20AC3E0125B2F03D0082ED80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -111,12 +109,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2088810F25B74D3A009DFEA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		20AC3DF525B2F0390082ED80 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2088812925B74DA3009DFEA4 /* ImageCaching.framework in Frameworks */,
 				E30B1A0441A87BF882A9761F /* Pods_Classifieds.framework in Frameworks */,
-				1969330D25B56D1300ABB995 /* ImageCachingFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,13 +142,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1969330025B56D0A00ABB995 /* Products */ = {
+		2088811325B74D3A009DFEA4 /* ImageCaching */ = {
 			isa = PBXGroup;
 			children = (
-				1969330525B56D0A00ABB995 /* ImageCachingFramework.framework */,
-				1969330725B56D0A00ABB995 /* ImageCachingFrameworkTests.xctest */,
+				2088812125B74D5E009DFEA4 /* ImageCaching.swift */,
+				2088811425B74D3A009DFEA4 /* ImageCaching.h */,
+				2088811525B74D3A009DFEA4 /* Info.plist */,
 			);
-			name = Products;
+			path = ImageCaching;
 			sourceTree = "<group>";
 		};
 		20AC3DEF25B2F0390082ED80 = {
@@ -152,6 +158,7 @@
 				20AC3DFA25B2F0390082ED80 /* Classifieds */,
 				20AC3E1125B2F03D0082ED80 /* ClassifiedsTests */,
 				20AC3E1C25B2F03D0082ED80 /* ClassifiedsUITests */,
+				2088811325B74D3A009DFEA4 /* ImageCaching */,
 				20AC3DF925B2F0390082ED80 /* Products */,
 				64DC5875BDE8FD90B32DDA6D /* Pods */,
 				98D6799E9E94B526457875FE /* Frameworks */,
@@ -164,6 +171,7 @@
 				20AC3DF825B2F0390082ED80 /* Classifieds.app */,
 				20AC3E0E25B2F03D0082ED80 /* ClassifiedsTests.xctest */,
 				20AC3E1925B2F03D0082ED80 /* ClassifiedsUITests.xctest */,
+				2088811225B74D3A009DFEA4 /* ImageCaching.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -336,7 +344,6 @@
 		98D6799E9E94B526457875FE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				196932FF25B56D0A00ABB995 /* ImageCachingFramework.xcodeproj */,
 				2300C190E91822B884B803BE /* Pods_Classifieds.framework */,
 			);
 			name = Frameworks;
@@ -344,7 +351,36 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		2088810D25B74D3A009DFEA4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2088811625B74D3A009DFEA4 /* ImageCaching.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		2088811125B74D3A009DFEA4 /* ImageCaching */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2088811B25B74D3A009DFEA4 /* Build configuration list for PBXNativeTarget "ImageCaching" */;
+			buildPhases = (
+				2088810D25B74D3A009DFEA4 /* Headers */,
+				2088810E25B74D3A009DFEA4 /* Sources */,
+				2088810F25B74D3A009DFEA4 /* Frameworks */,
+				2088811025B74D3A009DFEA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageCaching;
+			productName = ImageCaching;
+			productReference = 2088811225B74D3A009DFEA4 /* ImageCaching.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		20AC3DF725B2F0390082ED80 /* Classifieds */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20AC3E2225B2F03D0082ED80 /* Build configuration list for PBXNativeTarget "Classifieds" */;
@@ -354,12 +390,13 @@
 				20AC3DF525B2F0390082ED80 /* Frameworks */,
 				20AC3DF625B2F0390082ED80 /* Resources */,
 				91D08EEC911196C2C96921D2 /* [CP] Embed Pods Frameworks */,
-				1969330F25B56D1300ABB995 /* Embed Frameworks */,
 				1969332525B56EFF00ABB995 /* SwiftLint */,
+				2088812D25B74DA3009DFEA4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2088812C25B74DA3009DFEA4 /* PBXTargetDependency */,
 			);
 			name = Classifieds;
 			productName = Classifieds;
@@ -412,6 +449,10 @@
 				LastUpgradeCheck = 1170;
 				ORGANIZATIONNAME = "Nawal Ahmed";
 				TargetAttributes = {
+					2088811125B74D3A009DFEA4 = {
+						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
+					};
 					20AC3DF725B2F0390082ED80 = {
 						CreatedOnToolsVersion = 11.7;
 					};
@@ -436,39 +477,24 @@
 			mainGroup = 20AC3DEF25B2F0390082ED80;
 			productRefGroup = 20AC3DF925B2F0390082ED80 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 1969330025B56D0A00ABB995 /* Products */;
-					ProjectRef = 196932FF25B56D0A00ABB995 /* ImageCachingFramework.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				20AC3DF725B2F0390082ED80 /* Classifieds */,
 				20AC3E0D25B2F03D0082ED80 /* ClassifiedsTests */,
 				20AC3E1825B2F03D0082ED80 /* ClassifiedsUITests */,
+				2088811125B74D3A009DFEA4 /* ImageCaching */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		1969330525B56D0A00ABB995 /* ImageCachingFramework.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ImageCachingFramework.framework;
-			remoteRef = 1969330425B56D0A00ABB995 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		1969330725B56D0A00ABB995 /* ImageCachingFrameworkTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ImageCachingFrameworkTests.xctest;
-			remoteRef = 1969330625B56D0A00ABB995 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
+		2088811025B74D3A009DFEA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		20AC3DF625B2F0390082ED80 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -556,6 +582,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2088810E25B74D3A009DFEA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2088812225B74D5E009DFEA4 /* ImageCaching.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		20AC3DF425B2F0390082ED80 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -597,6 +631,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2088812C25B74DA3009DFEA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2088811125B74D3A009DFEA4 /* ImageCaching */;
+			targetProxy = 2088812B25B74DA3009DFEA4 /* PBXContainerItemProxy */;
+		};
 		20AC3E1025B2F03D0082ED80 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 20AC3DF725B2F0390082ED80 /* Classifieds */;
@@ -621,6 +660,63 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2088811C25B74D3A009DFEA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ImageCaching/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nawal.ImageCaching;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2088811D25B74D3A009DFEA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ImageCaching/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nawal.ImageCaching;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		20AC3E2025B2F03D0082ED80 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -858,6 +954,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2088811B25B74D3A009DFEA4 /* Build configuration list for PBXNativeTarget "ImageCaching" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2088811C25B74D3A009DFEA4 /* Debug */,
+				2088811D25B74D3A009DFEA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		20AC3DF325B2F0390082ED80 /* Build configuration list for PBXProject "Classifieds" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
